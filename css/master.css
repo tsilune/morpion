@@ -1,0 +1,23 @@
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.morpion {
+	width: 500px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	flex: 1;
+	display: flex;
+}
+
+.cell {
+	flex: 1;
+	border: 1px solid black;
+}
