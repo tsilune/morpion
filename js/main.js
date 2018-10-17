@@ -71,7 +71,17 @@ var verifierCombinaisons = function() {
 			partieGagnee = true;
 			document.getElementById("background").style.display = "block";
 			document.getElementById('winnerMsg').innerHTML = 'Bravo ' + currentPlayer + ' ! <br> Press [space] to restart';
+		} else {
+			var rempli = true;
+			for (var i = 0; i < cells.length; i++) {
+				if (cells[i].classList[1] === undefined) {
+					rempli = false;
+				}
+				if (rempli) {
+					restart();
+				}
 
+			};
 		}
 	});
 };
