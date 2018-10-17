@@ -3,31 +3,51 @@
 
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Le jeu du Morpion</title>
 	<link rel="stylesheet" href="/css/master.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
 <body>
-	<div class="morpion">
-		<div class="row">
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-		</div>
+	<h1>Bienvenue sur le jeu du Morpion</h1>
+	<h2>Que le combat commence !!!</h2>
 
-		<div class="row">
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-		</div>
+	<main>
+		<aside class="boutons">
+			<div id="new">Nouvelle partie</div>
+			<div id="restart">Press [space] to restart</div>
+		</aside>
 
-		<div class="row">
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-		</div>
+		<section>
+			<div id="winnerMsg"></div>
+			<div id="background"></div>
+			<div id="grille" class="morpion">
+				<div class="row">
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+				</div>
 
-	</div>
+				<div class="row">
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+				</div>
+
+				<div class="row">
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+				</div>
+			</div>
+			<div id="tour">C'est le tour de <span id="nom"></span> </div>
+		</section>
+		<aside class="score">
+			<h2>SCORE : </h2><br>
+			<div> <span id="j1"></span> : <span id="score1"></span> </div>
+			<div> <span id="j2"></span> : <span id="score2"></span> </div>
+		</aside>
+	</main>
 	<script src="js/main.js" charset="utf-8"></script>
 </body>
 
