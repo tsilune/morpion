@@ -76,12 +76,12 @@ var verifierCombinaisons = function() {
 	});
 };
 
-document.body.onkeypress = function(e) {
-	if (e.keyCode === 32) {
+document.body.addEventListener('keypress', function(e) {
+	if (e.code === 'Space') {
 		restart();
 		lancement();
 	};
-};
+});
 
 var restart = function() {
 	var y = document.getElementsByClassName("cell");
