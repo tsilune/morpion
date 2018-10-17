@@ -127,6 +127,10 @@ section {
 	background-color: #F2E8C4;
 }
 
+.cell:hover {
+	background-color: #FE6962;
+}
+
 .renoi {
 	background-image: url(../img/renoi.jpg);
 	background-size: cover;
